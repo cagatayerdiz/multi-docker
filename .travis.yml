@@ -14,10 +14,9 @@ after_success:
   - docker build -t cagatayerdiz/multi-server ./server
   - docker build -t cagatayerdiz/multi-worker ./worker
   # Log into the docker cli
-  - docker login -username "$DOCKER_ID" --password "$DOCKER_PASSWORD"
+  - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_ID" --password-stdin
   # Push images to docker hub 
   - docker push cagatayerdiz/multi-client
   - docker push cagatayerdiz/multi-nginx
   - docker push cagatayerdiz/multi-server
   - docker push cagatayerdiz/multi-worker
- 
