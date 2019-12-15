@@ -14,3 +14,7 @@ kubectl delete service client-node-port
 kubectl apply -f k8s
 
 kubectl logs server-deployment-59dc9cc4b-nlltc
+
+kubectl get storageclass
+
+kubectl describe storageclass
