@@ -18,3 +18,7 @@ kubectl logs server-deployment-59dc9cc4b-nlltc
 kubectl get storageclass
 
 kubectl describe storageclass
+
+kubectl get pv
+
+kubectl get pvc
