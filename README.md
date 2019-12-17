@@ -22,3 +22,7 @@ kubectl describe storageclass
 kubectl get pv
 
 kubectl get pvc
+
+kubectl create secret generic pgpassword --from-literal key=value
+
+kubectl get secrets
