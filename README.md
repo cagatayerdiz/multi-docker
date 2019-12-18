@@ -26,3 +26,11 @@ kubectl get pvc
 kubectl create secret generic pgpassword --from-literal key=value
 
 kubectl get secrets
+
+kubectl apply -f kubernetes-dashboard.yaml
+
+kubectl proxy
+
+http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+
+https://localhost
